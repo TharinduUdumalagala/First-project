@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2020-10-17T09:27:40 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="StudentDetail" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c31544cb-7498-4139-a001-e3b15a61330d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="manawa Data Adapter "/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM student]]>
+	</queryString>
+	<field name="Date" class="java.lang.String"/>
+	<field name="Student_Id" class="java.lang.Integer"/>
+	<field name="Student_Name" class="java.lang.String"/>
+	<field name="Address" class="java.lang.String"/>
+	<field name="DOB" class="java.lang.String"/>
+	<field name="Gender" class="java.lang.String"/>
+	<field name="Grade_Id" class="java.lang.Integer"/>
+	<field name="Parent_Id" class="java.lang.Integer"/>
+	<group name="Student_Id">
+		<groupExpression><![CDATA[$F{Student_Id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="85" splitType="Stretch">
+			<staticText>
+				<reportElement x="-11" y="10" width="571" height="66" uuid="d328496d-6ec1-4614-92e9-fd15e398613e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Student Details]]></text>
+			</staticText>
+			<textField pattern="HH:mm">
+				<reportElement x="435" y="20" width="125" height="30" uuid="f040b563-fa57-4e20-b9ce-c9ca3411dd08"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="20" y="20" width="137" height="30" uuid="f1f2cf14-de8b-4bed-bbc3-9a79dbad5396"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-6" y="64" width="555" height="1" uuid="69429c84-1ab2-4299-bce7-cf2ed7e4f6e9"/>
+			</line>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="66" height="30" uuid="11c9d15f-0347-4be2-bc79-6884324140f4"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="0" width="62" height="30" uuid="a30efa87-6ac3-455d-a885-a16c2495cf15"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Student_Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="153" y="0" width="100" height="30" uuid="9f1fb5aa-a5c1-4fa8-b9c3-70735a258364"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Student_Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="261" y="0" width="100" height="30" uuid="4885facc-ef78-4319-8bd7-e53cce19eb39"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="0" width="100" height="30" uuid="a0f558ee-80ee-4f86-bc47-e84b9660b308"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[DOB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="465" y="3" width="64" height="30" uuid="aa6c32e8-f8fb-40ed-8103-a61b5fde2ee2"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="11" y="0" width="66" height="30" uuid="48bb9d44-e20d-4b49-8096-812205338ef1"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="86" y="0" width="65" height="30" uuid="85f155e9-0ef2-49ea-9429-c90bb44a93f3"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Student_Id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="0" width="100" height="30" uuid="5e9879f4-8c18-4c44-a790-40ca26a39c85"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Student_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="259" y="0" width="100" height="30" uuid="942b502c-fcf3-4515-ac60-89dd936ad045"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="367" y="0" width="90" height="30" uuid="8b0a3f40-8a29-4b08-bdd9-ede51c56be01"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DOB}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="0" width="64" height="30" uuid="b34e327b-d602-447d-a85e-aa5765c9b524"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Gender}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="180" y="14" width="199" height="30" uuid="37053ba7-06d8-4b27-b49d-ed65a18405bf"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="18"/>
+				</textElement>
+				<text><![CDATA[Software By IJSE]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

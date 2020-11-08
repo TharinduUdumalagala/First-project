@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="953.0" prefWidth="1693.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SubjectViewController">
+   <children>
+      <ImageView fitHeight="988.0" fitWidth="1695.0" opacity="0.5" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/pexels-rahul-pandit-1130495.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="15.0" layoutY="5.0" prefHeight="73.0" prefWidth="1680.0" text="       Subject">
+         <font>
+            <Font name="Arial Black" size="40.0" />
+         </font>
+      </Label>
+      <Separator layoutX="39.0" layoutY="76.0" prefHeight="4.0" prefWidth="1655.0" />
+      <JFXTextField fx:id="txtSubjectId" labelFloat="true" layoutX="114.0" layoutY="147.0" prefHeight="44.0" prefWidth="379.0" promptText="Subject Id" unFocusColor="#030303">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtSubjectName" labelFloat="true" layoutX="536.0" layoutY="147.0" prefHeight="44.0" prefWidth="379.0" promptText="Subject Name" unFocusColor="#0d0d0d">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <TableView fx:id="tblSubject" layoutX="112.0" layoutY="444.0" opacity="0.76" prefHeight="457.0" prefWidth="1393.0">
+        <columns>
+          <TableColumn fx:id="colSubjectId" prefWidth="225.0" text="Subject Id" />
+            <TableColumn fx:id="colSubjectName" prefWidth="356.0" text="Subject Name" />
+          <TableColumn fx:id="colSubjectDiscription" prefWidth="399.0" text="Subject Discription" />
+            <TableColumn fx:id="colOperate" prefWidth="346.0" text="Operate" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtSubjectDiscription" labelFloat="true" layoutX="114.0" layoutY="242.0" prefHeight="44.0" prefWidth="379.0" promptText="Subject Discription" unFocusColor="#0d0d0d">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <Button fx:id="btnSave" layoutX="816.0" layoutY="378.0" mnemonicParsing="false" onAction="#SaveSubject" prefHeight="44.0" prefWidth="134.0" style="-fx-background-color: #65B3DE #65B3DE;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <Button fx:id="btnupdate" layoutX="667.0" layoutY="378.0" mnemonicParsing="false" onAction="#updateSubject" prefHeight="44.0" prefWidth="134.0" style="-fx-background-color: #65B3DE;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <JFXTextField fx:id="txtSeach" labelFloat="true" layoutX="114.0" layoutY="378.0" onAction="#GetDataSubject" prefHeight="44.0" prefWidth="523.0" promptText="Search" unFocusColor="#030303">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

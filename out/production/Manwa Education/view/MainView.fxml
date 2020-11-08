@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainViewController">
+   <children>
+      <AnchorPane opacity="0.8" prefHeight="1080.0" prefWidth="231.0" style="-fx-background-color: #3143DB#3143DB;">
+         <children>
+            <Label layoutX="36.0" layoutY="326.0" prefHeight="42.0" prefWidth="184.0" text="         Teacher" textFill="#fcf2f2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="73.0" fitWidth="79.0" layoutX="79.0" layoutY="368.0" onMouseClicked="#OpenSubjectView" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/elective_filled_100px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="24.0" layoutY="441.0" prefHeight="42.0" prefWidth="184.0" text="            Subject" textFill="#fcf2f2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="79.0" fitWidth="73.0" layoutX="79.0" layoutY="492.0" onMouseClicked="#OpenAttendanceView" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/grades_100px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="20.0" layoutY="565.0" prefHeight="42.0" prefWidth="184.0" text="          Attendance" textFill="#fcf2f2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="-4.0" layoutY="124.0" prefHeight="3.0" prefWidth="231.0" />
+            <Separator layoutX="1.0" layoutY="247.0" prefHeight="3.0" prefWidth="231.0" />
+            <Separator layoutX="1.0" layoutY="368.0" prefHeight="3.0" prefWidth="231.0" />
+            <Separator layoutX="1.0" layoutY="492.0" prefHeight="3.0" prefWidth="231.0" />
+            <Separator layoutX="-3.0" layoutY="614.0" prefHeight="3.0" prefWidth="239.0" />
+            <ImageView fitHeight="79.0" fitWidth="89.0" layoutX="79.0" layoutY="747.0" onMouseClicked="#OpenPaymentView" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/payment_history_100px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="27.0" layoutY="826.0" prefHeight="49.0" prefWidth="184.0" text="           Payment" textFill="#fcf2f2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="3.0" layoutY="744.0" prefHeight="3.0" prefWidth="231.0" />
+            <ImageView fitHeight="79.0" fitWidth="89.0" layoutX="77.0" layoutY="127.0" onMouseClicked="#OpenRegistrationView" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/student_registration_100px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="79.0" fitWidth="89.0" layoutX="72.0" layoutY="247.0" onMouseClicked="#OpenTeacherView" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/training_filled_100px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="25.0" layoutY="206.0" prefHeight="42.0" prefWidth="184.0" text="        Registration" textFill="#eeecec">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="76.0" layoutY="617.0" onMouseClicked="#OpenExamView" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/exam_100px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="36.0" layoutY="696.0" prefHeight="49.0" prefWidth="184.0" text="            Exam" textFill="#fcf2f2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="73.0" fitWidth="89.0" layoutX="72.0" layoutY="23.0" onMouseClicked="#Home" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/home_100px.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="4.0" layoutY="874.0" prefHeight="3.0" prefWidth="231.0" />
+            <ImageView fitHeight="79.0" fitWidth="89.0" layoutX="80.0" layoutY="877.0" onMouseClicked="#OpenPaymentView" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/report_card_100px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="28.0" layoutY="944.0" prefHeight="49.0" prefWidth="184.0" text="            Report" textFill="#fcf2f2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="1.0" layoutY="992.0" prefHeight="3.0" prefWidth="231.0" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="r" layoutX="228.0" prefHeight="127.0" prefWidth="1701.0" style="-fx-background-color: #4559DD;">
+         <children>
+            <Label alignment="CENTER" layoutX="7.0" layoutY="28.0" prefHeight="74.0" prefWidth="1693.0" text="..Manawa Education Center.." textFill="#f5ecec">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="85.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane fx:id="root" layoutX="231.0" layoutY="128.0" prefHeight="952.0" prefWidth="1693.0" />
+   </children>
+</AnchorPane>
